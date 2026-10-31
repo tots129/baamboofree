@@ -1,0 +1,32 @@
+{
+  "name": "jogae",
+  "version": "1.0.0",
+  "description": "Jogaê! — plataforma de jogos educativos com Classic Quiz e Spud Game multiplayer em tempo real.",
+  "private": true,
+  "main": "server/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js",
+    "start": "node server/index.js",
+    "test": "node tests/engine.test.js && node tests/api-socket.test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.14",
+    "bcryptjs": "^3.0.3",
+    "compression": "^1.8.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.9",
+    "esbuild": "^0.28.2",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1",
+    "qrcode-generator": "^2.0.4",
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4"
+  }
+}
